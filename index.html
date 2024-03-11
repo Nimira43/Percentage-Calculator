@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <div class="card">
+        <h1>% Calc</h1>
+        <div class="percentage-container">
+            <label for="percentageSlider" id="percentageLabelSlider" class="heading">Percentage Slider</label>
+            <input type="range" id="percentageSlider" min="0" max="100" value="10" step="1">
+            <span id="percentageValue" class="heading">10%</span>
+        </div>
+        <div>
+            <input type="text" id="baseNumber" placeholder="Enter number">
+        </div>
+        <button onclick="calculatePercentage()">Calc</button>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
